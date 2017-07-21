@@ -24,7 +24,7 @@ class AddColumnsForLessons extends Migration
             $table->integer('Token_price_90')->nullable();
             $table->string('youtube_id')->nullable();
             $table->string('vimeo_id')->nullable();
-            $table->string('lesson_name_slug')->nullable();
+            $table->string('lesson_name_slug')->nullable()->index();
         });
     }
 
